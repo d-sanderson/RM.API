@@ -21,7 +21,7 @@ namespace RM.API.Services
 
         public IEnumerable<Quotation> GetQuotes()
         {
-            return _context.Quotes.OrderBy(c => c.Character).ToList();
+            return _context.Quotes.OrderBy(c => c.Id).ToList();
         }
 
         public bool Save()
